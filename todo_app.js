@@ -22,7 +22,6 @@ function add_items() {
 
         let deleteIcon = li_list.querySelector('.delete-icon');
         deleteIcon.addEventListener('click', function() {
-           
             ul_list.removeChild(li_list);
         });
 
@@ -41,13 +40,13 @@ function add_items() {
       input_app.value = "";
 }
 
+
 function clear_ALL()
 {
    
     
         if (ul_list.children.length > 0) {
             ul_list.innerHTML = "";
-          
         }
      
     

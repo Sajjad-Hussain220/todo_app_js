@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
 .main {
@@ -13,6 +14,8 @@ body {
     border-radius: 15px;
     padding: 20px;
     text-align: center; 
+    position: fixed;
+
 }
 
 
@@ -63,17 +66,22 @@ span {
 i
 {
     cursor: pointer;
-    
+    position: fixed;
 }
 
 .fas{
-    position: fixed;
-margin-left: 25%;
+    
+    margin-left: 25%;
+}
+.delete-icon
+{
+    margin-left: 26.5%;
+   
 }
 i:hover{
    color: rgb(64, 64, 64);
 }
 
 .clar_all_btn{
-    margin-left: 75%;
+    margin-left: 79%;
 }
