@@ -5,25 +5,22 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 
 .main {
     background-color: white;
-    width: 30%;
+    width: 80%;
+    max-width: 400px; /* Set a maximum width to prevent it from getting too wide */
     border-radius: 15px;
     padding: 20px;
-    text-align: center; 
+    text-align: center;
     position: fixed;
-
 }
-
-
 
 input {
     padding: 8px;
-    width: 70%;
-    margin-right: 10px;
+    width: calc(100% - 20px); 
+    margin-bottom: 10px; 
 }
 
 .save_btn {
@@ -33,6 +30,8 @@ input {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 20%;
+    box-sizing: border-box; 
 }
 
 .save_btn:hover {
@@ -47,41 +46,69 @@ ul {
 li {
     margin: 10px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
-span {
-        display: block;
-        white-space: nowrap; 
-        overflow: hidden;   
-        text-overflow: ellipsis; 
-    }
+
+.span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .li {
     background-color: black;
     border-radius: 5px;
     padding: 10px;
     color: white;
-}
-i
-{
-    cursor: pointer;
-    position: fixed;
+    margin-bottom: 10px;
+
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    overflow: auto;
+ }
+
+.icons_setting {
+    margin-top: -12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.fas{
+i {
     
-    margin-left: 25%;
-}
-.delete-icon
-{
-    margin-left: 26.5%;
-   
-}
-i:hover{
-   color: rgb(64, 64, 64);
+    cursor: pointer;
+    font-size: 1.2em;
 }
 
-.clar_all_btn{
-    margin-left: 79%;
+.fas,
+.delete-icon {
+    margin-left: 10px; 
+}
+
+
+i:hover {
+    color: rgb(64, 64, 64);
+}
+
+.clar_all_btn {
+    margin-left: calc(92% - 50px); 
+}
+
+
+.name {
+    background-color: white;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+width: 100%;
+text-align: center;
+}
+
+h3 {
+    margin: 0; /* Remove default margin for h3 */
 }

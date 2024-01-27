@@ -11,20 +11,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body id="body" onload="body()">
+<body id="body" onload="body">
     <div class="main">
         <h1>Todo App</h1>
 
         <input type="text" id="input_app">
-        <button type="button" id="save_btn" class="save_btn"onclick="add_items()">Save</button>
+        <button type="button" id="save_btn" class="save_btn" >Save</button>
         <ul id="li_list">
 
         </ul>
-        <button type="button" id="clearall" class="clar_all_btn save_btn" onclick="clear_ALL()">Clear All</button>
-        
+        <button type="button" id="clearall" class="clar_all_btn save_btn" >Clear All</button>
     </div>
-
-    <script src="todo_app.js"></script>
+    <div class="name">
+    <h3>Developed by Sajjad</h1>
+    </div>
+    <script type="module" src="todo_app.js"></script>
 </body>
 
 </html>
